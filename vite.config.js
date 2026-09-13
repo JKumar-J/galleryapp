@@ -1,0 +1,13 @@
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+
+
+
+// https://vite.dev/config/
+export default defineConfig({
+  base: globalThis.process?.env?.GITHUB_ACTIONS
+    ? `/${globalThis.process.env.GITHUB_REPOSITORY.split('/')[1]}/`
+    : '/',
+  plugins: [react(),tailwindcss()],
+})

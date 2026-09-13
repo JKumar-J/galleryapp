@@ -2,6 +2,9 @@
 
 A responsive React gallery that loads images from the [Picsum Photos API](https://picsum.photos/) and lets you move through paginated results.
 
+## Live Demo
+https://jkumar-j.github.io/galleryapp/
+
 ## Features
 
 - Displays 18 images per page
